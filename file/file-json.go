@@ -20,7 +20,6 @@ func CreateJsonBasedJson(filePath string) {
 	var yamlStruct Configuration
 	err = yaml.Unmarshal(ymlConfigFile, &yamlStruct)
 	CheckError(err)
-	// rawJsonData, _ := json.Marshal(yamlStruct)
 	rawJsonData, err := json.MarshalIndent(yamlStruct, "", "\t")
 	CheckError(err)
 	file.Write(rawJsonData)
