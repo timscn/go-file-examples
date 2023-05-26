@@ -1,5 +1,5 @@
 ---
 prod: true
 server_opts:
-  ports: [8, 9]
+  ports: [8, 10]
   timeout: 200s

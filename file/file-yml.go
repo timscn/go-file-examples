@@ -26,9 +26,7 @@ func CreateYmlFile(filePath string) {
 	defer file.Close()
 	var yamlConfig Configuration
 	yamlFile, err := ioutil.ReadFile("config-sample.yml")
-	CheckError(err)
 	err = yaml.Unmarshal(yamlFile, &yamlConfig)
-	CheckError(err)
 	CheckError(err)
 	file.Write(yamlFile)
 	CheckError(err)
