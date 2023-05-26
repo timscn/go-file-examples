@@ -1,0 +1,10 @@
+{
+	"prod": true,
+	"server_opts": {
+		"ports": [
+			8,
+			9
+		],
+		"timeout": "200s"
+	}
+}
